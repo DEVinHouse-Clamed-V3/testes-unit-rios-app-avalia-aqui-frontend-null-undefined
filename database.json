@@ -1,0 +1,148 @@
+{
+  "evaluations": [
+    {
+      "id": 1,
+      "productId": 1,
+      "name": "João Silva",
+      "email": "joao.silva@example.com",
+      "feedback": "Ótimo filme, cheio de ação!",
+      "experience": "Feliz",
+      "recommend": true
+    },
+    {
+      "productId": 1,
+      "name": "Felipe",
+      "email": "felipe@email.com",
+      "feedback": "Muito bom o filme",
+      "experience": "Feliz",
+      "recommend": true,
+      "id": 2
+    },
+    {
+      "productId": 2,
+      "name": "Joao",
+      "email": "joao@email.com",
+      "feedback": "Não gostei do filme",
+      "experience": "Ruim",
+      "recommend": false,
+      "id": 3
+    },
+    {
+      "productId": 3,
+      "name": "Maria",
+      "email": "maria@email.com",
+      "feedback": "Filme me agradou um pouco até ",
+      "experience": "Medio",
+      "recommend": false,
+      "id": 4
+    },
+    {
+      "productId": 5,
+      "name": "Jose",
+      "email": "Jose@email.com",
+      "feedback": "Filme muito ruim",
+      "experience": "Ruim",
+      "recommend": false,
+      "id": 5
+    },
+    {
+      "productId": 5,
+      "name": "Jose",
+      "email": "Jose@email.com",
+      "feedback": "Filme muito ruim",
+      "experience": "Ruim",
+      "recommend": false,
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Vingadores: Ultimato",
+      "price": "R$ 39,99",
+      "brand": "Marvel Studios",
+      "description": "O épico final da saga dos Vingadores, com muita ação e emoção.",
+      "image": "https://maxiverso.com.br/wp-content/uploads/2019/04/ultimato-2-1024x1024.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Harry Potter e a Pedra Filosofal",
+      "price": "R$ 29,99",
+      "brand": "Warner Bros.",
+      "description": "A primeira aventura de Harry Potter no mundo mágico de Hogwarts.",
+      "image": "https://m.media-amazon.com/images/I/81YOuOGFCJL._SL1500_.jpg"
+    },
+    {
+      "id": 3,
+      "name": "O Senhor dos Anéis: A Sociedade do Anel",
+      "price": "R$ 34,99",
+      "brand": "New Line Cinema",
+      "description": "A jornada épica para destruir o Um Anel começa aqui.",
+      "image": "https://m.media-amazon.com/images/I/51Qvs9i5a%2BL._AC_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Star Wars: O Despertar da Força",
+      "price": "R$ 44,99",
+      "brand": "Lucasfilm",
+      "description": "A saga Star Wars retorna com novos personagens e antigos heróis.",
+      "image": "https://br.web.img3.acsta.net/pictures/15/10/18/18/39/408904.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mulher-Maravilha",
+      "price": "R$ 39,99",
+      "brand": "DC Comics",
+      "description": "A história da icônica heroína da DC Comics, Diana Prince.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/9/9f/Mulher_Maravilha_2009.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Capitão América: Guerra Civil",
+      "price": "R$ 42,99",
+      "brand": "Marvel Studios",
+      "description": "Os heróis da Marvel entram em confronto em um épico embate.",
+      "image": "https://br.web.img3.acsta.net/pictures/16/03/10/20/36/363874.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Guardiões da Galáxia",
+      "price": "R$ 39,99",
+      "brand": "Marvel Studios",
+      "description": "Um grupo de desajustados se une para salvar a galáxia.",
+      "image": "https://br.web.img3.acsta.net/pictures/14/06/03/21/11/122582.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Batman: O Cavaleiro das Trevas",
+      "price": "R$ 35,99",
+      "brand": "Warner Bros.",
+      "description": "A luta de Batman contra o Coringa, um dos maiores vilões de Gotham.",
+      "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/98/32/19870786.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Velozes e Furiosos 7",
+      "price": "R$ 29,99",
+      "brand": "Universal Pictures",
+      "description": "O sétimo filme da franquia Velozes e Furiosos, cheio de ação e adrenalina.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/b/b8/Furious_7_poster.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Jurassic World",
+      "price": "R$ 32,99",
+      "brand": "Universal Pictures",
+      "description": "A aventura emocionante no parque dos dinossauros está de volta.",
+      "image": "https://s2.glbimg.com/2k_0N5qLWQj59M2rHBi3o1eH13Q=/e.glbimg.com/og/ed/f/original/2018/04/17/jura.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Pantera Negra",
+      "price": "R$ 45,99",
+      "brand": "Marvel Studios",
+      "description": "O filme que revolucionou o universo cinematográfico da Marvel com o herói de Wakanda.",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/2/28/Black_Panther_2018.jpg"
+    }
+  ]
+}
