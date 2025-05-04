@@ -17,9 +17,9 @@ export default function Home({navigation}:{navigation:NavigationProp<any>}) {
         <SafeAreaView style={globalStyles.safe}>
 
             <View style={styles.row}>
-                <Image style={styles.image} source={{uri: 'https://m.media-amazon.com/images/I/81arD48HpRL._AC_UF1000,1000_QL80_.jpg'}}/>
-                <Image style={styles.image} source={{uri: 'https://cdn.ome.lt/Z8uv4h9Sl9w4b4xJJDFySIDGBXA=/fit-in/1070x750/smart/filer_public/d7/2b/d72bb848-8dc5-49a2-98cc-580dea871592/avengers-infinity-war-poster.jpeg'}}/>
-                <Image style={styles.image} source={{uri: 'https://blog.uceff.edu.br/wp-content/uploads/2019/02/poster-cartaz-breaking-bad-serie-netflix-sucesso.jpg'}}/>
+                <Image style={styles.image} testID={'poster1'} source={{uri: 'https://m.media-amazon.com/images/I/81arD48HpRL._AC_UF1000,1000_QL80_.jpg'}}/>
+                <Image style={styles.image} testID={'poster2'} source={{uri: 'https://cdn.ome.lt/Z8uv4h9Sl9w4b4xJJDFySIDGBXA=/fit-in/1070x750/smart/filer_public/d7/2b/d72bb848-8dc5-49a2-98cc-580dea871592/avengers-infinity-war-poster.jpeg'}}/>
+                <Image style={styles.image} testID={'poster3'} source={{uri: 'https://blog.uceff.edu.br/wp-content/uploads/2019/02/poster-cartaz-breaking-bad-serie-netflix-sucesso.jpg'}}/>
             </View>
 
             <Text style={styles.title}>Avalie Aqui</Text>
