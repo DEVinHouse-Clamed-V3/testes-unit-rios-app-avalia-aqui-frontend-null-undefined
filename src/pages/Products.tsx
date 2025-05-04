@@ -1,6 +1,6 @@
 import axios from "axios"
 import {View, Text, Alert, FlatList, SafeAreaView, TouchableOpacity, StyleSheet, Image, TextInput} from 'react-native'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {NavigationProp, useFocusEffect} from '@react-navigation/native'
 import { globalStyles } from "../global/styles"
 import { API_URL } from "@env"
@@ -22,18 +22,22 @@ export default function Products({ navigation }:{navigation : NavigationProp<any
 
     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(search.toLowerCase()))
 
-    useFocusEffect(() =>{
-
-
-        axios.get(`${API_URL}/products`)
-        .then((response) => {
-            setProducts(response.data)
-        })
-        .catch((error) => {
-            Alert.alert('Não foi possível obter a lista de produtos')
-            console.log(error)
-        })
-    })
+    useFocusEffect(
+        useCallback(() => {
+            setLoading(true)
+    
+            axios.get(`${API_URL}/products`)
+                .then((response) => {
+                    setProducts(response.data)
+                })
+                .catch((error) => {
+                    Alert.alert('Não foi possível obter a lista de produtos')
+                    console.log(error)
+                })
+                .finally(() => setLoading(false))
+    
+        }, [])
+    )
 
     function navigateToReview(id: number) {
         console.log("Navigating to FormReview with productId:", id);

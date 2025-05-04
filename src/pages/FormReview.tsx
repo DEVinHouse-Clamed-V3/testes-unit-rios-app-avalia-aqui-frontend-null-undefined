@@ -5,6 +5,7 @@ import { globalStyles } from '../global/styles';
 import Experience from '../components/Experience';
 import axios from 'axios';
 import { API_URL } from "@env"
+import { review } from '../actions/review.actions';
 
 export default function FormReview({ navigation, route }: { navigation: NavigationProp<any>, route: any }, ) {
     const [name, setName] = useState('');
@@ -24,14 +25,8 @@ export default function FormReview({ navigation, route }: { navigation: Navigati
 
         setIsLoading(true)
 
-        axios.post(`${API_URL}/reviews`, {
-            product_id: product_id,
-            name: name,
-            email: email,
-            feedback: feedback,
-            experience: experience,
-            recommend: recommend
-        }).then(() => {
+        review(product_id, name, email, feedback, experience, recommend)
+        .then(() => {
             Alert.alert('Obrigado', 'Feedback cadastrado com sucesso!')
             navigation.navigate('Products')
         }).catch((error) => {
@@ -58,6 +53,7 @@ export default function FormReview({ navigation, route }: { navigation: Navigati
                 placeholder="Nome"
                 value={name}
                 onChangeText={setName}
+                testID={'input-name'}
             />
 
             <TextInput
@@ -66,6 +62,7 @@ export default function FormReview({ navigation, route }: { navigation: Navigati
                 value={email}
                 onChangeText={setEmail}
                 keyboardType="email-address"
+                testID={'input-email'}
             />
 
             <TextInput
@@ -77,6 +74,7 @@ export default function FormReview({ navigation, route }: { navigation: Navigati
                 numberOfLines={4}
                 returnKeyType='done'
                 blurOnSubmit={true}
+                testID={'input-experience'}
             />
 
             <Experience onExperienceChange={(value) => setExperience(value)}/>
@@ -85,6 +83,7 @@ export default function FormReview({ navigation, route }: { navigation: Navigati
                 <Switch
                     value={recommend}
                     onValueChange={setRecommend}
+                    testID='switch-recommend'
                 />
                 <Text style={styles.switchText}>Recomendaria para outras pessoas?</Text>
             </View>
